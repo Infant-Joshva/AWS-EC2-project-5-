@@ -14,7 +14,7 @@ import joblib
 # 1️⃣ MODEL LOADING
 # ======================================================
 model = joblib.load(
-    "model\Model_log-new_data.pkl"
+    "model/Model_log-new_data.pkl"
 )
 
 # ======================================================
@@ -23,7 +23,7 @@ model = joblib.load(
 @st.cache_data
 def load_data():
     return pd.read_csv(
-        "dataset\cleaned_senti_mapped_data.csv"
+        "dataset/cleaned_senti_mapped_data.csv"
     )
 
 review_df = load_data()
